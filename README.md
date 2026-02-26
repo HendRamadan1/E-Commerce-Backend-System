@@ -251,7 +251,34 @@ https://redis.io/docs/
    - Secure password hashing and authentication workflows
    
    - Middleware-driven request lifecycle management
-   - 
+---
+
+## ⚙️ Environment Variables
+
+Create `.env` file:
+
+---
+
+##  Running the Project
+
+### Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Run migrations
+
+```bash
+alembic upgrade head
+```
+
+### Start server
+
+```bash
+uvicorn src.__init__:app --reload
+```
+
 ## Contact 
 
 For any questions or inquiries, please feel free to reach out through the following channels:
